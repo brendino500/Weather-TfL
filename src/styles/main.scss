@@ -13,33 +13,44 @@ $box-padding: 1rem;
 // #219fda
 // #04294b
 
-
-.card {
-  height: 100%;
-  display:flex;
-  flex-direction: column;
-}
-.card-content {
-  margin-top: auto;
-}
-
-.logo-emoji {
-  margin: 0 10px;
-}
-
 .form-link {
   margin-left: 3px;
-}
-
-
-span.logout {
-  cursor: pointer;
 }
 
 section.section {
   min-height: calc(100vh - 11.25rem);
 }
 
+div > h1 {
+  text-align: center;
+  justify-content: center;
+  align-content: center;
+}
+
+.navbar {
+  &.is-transparent {
+  background-color: transparent;
+  background-image: none;
+  }
+}
+
+a.navbar-item {
+  color: white;
+}
+
+// $navbar-background-color: transparent;
+
+#root { 
+  background-image: url("https://images.unsplash.com/photo-1483631224226-a219224bb76e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1934&q=80");
+  background-position: center;
+  background-repeat:  no-repeat;
+  background-attachment: fixed;
+  background-size:  cover;
+  width: 100%;
+  min-height: 100vh;
+  height: auto;
+
+}
 
 
 @import '~bulma/bulma.sass';
