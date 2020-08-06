@@ -21,7 +21,7 @@ class Navbar extends React.Component {
 
   render() {
     return (
-      <nav className="navbar is-dark">
+      <nav className="navbar is-transparent">
         <div className="container">
           <div className="navbar-brand">
             <Link to="/" className="navbar-item">Home</Link>

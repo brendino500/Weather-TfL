@@ -10,12 +10,9 @@ import TubeStatus from './components/mains/TubeStatus'
 
 class App extends React.Component {
 
-  componentDidMount() {
-    navigator.geolocation.getCurrentPosition(function(position){
-      console.log(`Lat is: ${position.coords.latitude}`)
-      console.log(`Long is: ${position.coords.longitude}`)
-    }) 
-  }
+  // componentDidMount() {
+
+  // }
 
   render() {
     return (
