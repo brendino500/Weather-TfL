@@ -9,19 +9,45 @@ import BikeStatus from './components/mains/BikeStatus'
 import TubeStatus from './components/mains/TubeStatus'
 import WeatherStatus from './components/mains/WeatherStatus'
 
-const App = () => {
-  return (
-    <BrowserRouter>
-      <Navbar />
-      <Switch>
-        <Route exact path="/" component={Home}/>
-        <Route path="/AirQuality" component={AirQuality} />
-        <Route path="/BikeStatus" component={BikeStatus} />
-        <Route path="/TubeStatus" component={TubeStatus} />
-        <Route path="/WeatherStatus" component={WeatherStatus} />
-      </Switch>
-    </BrowserRouter>
-  )
+class App extends React.Component {
+
+  componentDidMount() {
+    navigator.geolocation.getCurrentPosition(function(position){
+      console.log(`Lat is: ${position.coords.latitude}`)
+      console.log(`Long is: ${position.coords.longitude}`)
+    }) 
+  }
+  
+  render() {
+    return (
+      <BrowserRouter>
+        <Navbar />
+        <Switch>
+          <Route exact path="/" component={Home}/>
+          <Route path="/AirQuality" component={AirQuality} />
+          <Route path="/BikeStatus" component={BikeStatus} />
+          <Route path="/TubeStatus" component={TubeStatus} />
+          <Route path="/WeatherStatus" component={WeatherStatus} />
+        </Switch>
+      </BrowserRouter>
+    )
+  }
 }
+
+
+// const App = () => {
+//   return (
+//     <BrowserRouter>
+//       <Navbar />
+//       <Switch>
+//         <Route exact path="/" component={Home}/>
+//         <Route path="/AirQuality" component={AirQuality} />
+//         <Route path="/BikeStatus" component={BikeStatus} />
+//         <Route path="/TubeStatus" component={TubeStatus} />
+//         <Route path="/WeatherStatus" component={WeatherStatus} />
+//       </Switch>
+//     </BrowserRouter>
+//   )
+// }
 
 export default App
