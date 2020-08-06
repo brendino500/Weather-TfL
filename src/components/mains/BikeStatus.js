@@ -1,9 +1,12 @@
 import React from 'react'
+import MapGl, { Marker } from 'react-map-gl' 
+import 'mapbox-gl/dist/mapbox-gl.css'
+
 import { getBikeStatus } from '../../lib/api'
 
 class BikeStatus extends React.Component {
   state = {
-    bikePoints: null
+    bikePoints: []
   }
 
   async componentDidMount() {
@@ -17,19 +20,26 @@ class BikeStatus extends React.Component {
   }
 
   render() {
-    console.log(this.state)
-    const { bikePoints } = this.state
-
-    if (!bikePoints) return null
-    
     return (
-      <div className="columns is-multiline">
-        {bikePoints.map(bike => (
-          <div key={bike.id}>
-            <h1>{bike.commonName}</h1>
-          </div>
+      <MapGl 
+        mapboxApiAccessToken={process.env.REACT_APP_MAPTOK}
+        height={'100vh'}
+        width={'100vw'}
+        mapStyle='mapbox://styles/mapbox/dark-v10'
+        latitude={51.515}
+        longitude={-0.078}
+        zoom={12}
+      >
+        {this.state.bikePoints.map(point => (
+          <Marker
+            key={point.id}
+            latitude={point.lat}
+            longitude={point.lon}
+          >
+            <span role="img" aria-label="marker" className="marker">🚴‍♀️</span>
+          </Marker>
         ))}
-      </div>
+      </MapGl>
     )
   }
 }
