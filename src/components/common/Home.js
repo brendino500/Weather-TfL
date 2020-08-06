@@ -6,13 +6,11 @@ class Home extends React.Component {
     weather: null
   }
 
-
   async componentDidMount() {
-    console.log(this.props)
     try {
       const res = await getWeatherStatus()
-      console.log(res.data)
-      this.setState({ name: res.data })
+      // console.log(res.data)
+      this.setState({ weather: res.data })
     } catch (err) {
       console.log(err)
     }
@@ -20,6 +18,10 @@ class Home extends React.Component {
 
   render() {
     console.log(this.state)
+    const { weather } = this.state
+
+    if (!weather) return null 
+
     return (
       <section className="hero is-fullheight-with-navbar is-warning">
         <div className="hero-body">
@@ -27,6 +29,7 @@ class Home extends React.Component {
             <p className="title is-1 has-text-centered has-text-black">
               <span role="img" aria-label="logo" className="logo-emoji"></span>Digital Time
             </p>
+            <h1>Humidity: {weather.current.condition.icon}</h1>
           </div>
         </div>
       </section>

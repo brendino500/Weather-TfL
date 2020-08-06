@@ -1,5 +1,4 @@
 import axios from 'axios'
-
 const tflUrl = 'https://api.tfl.gov.uk/'
 
 export const getTubeStatus = () => {
