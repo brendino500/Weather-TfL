@@ -7,7 +7,6 @@ import Navbar from './components/common/Navbar'
 import AirQuality from './components/mains/AirQuality'
 import BikeStatus from './components/mains/BikeStatus'
 import TubeStatus from './components/mains/TubeStatus'
-import Map from './components/mains/Map'
 
 class App extends React.Component {
 
@@ -27,7 +26,6 @@ class App extends React.Component {
           <Route path="/AirQuality" component={AirQuality} />
           <Route path="/BikeStatus" component={BikeStatus} />
           <Route path="/TubeStatus" component={TubeStatus} />
-          <Route path="/WeatherStatus" component={Map} />
         </Switch>
       </BrowserRouter>
     )
