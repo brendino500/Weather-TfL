@@ -1,5 +1,7 @@
 import React from 'react'
+import Clock from 'react-live-clock'
 import { getWeatherStatus } from '../../lib/api'
+
 
 class Home extends React.Component {
   state = {
@@ -29,7 +31,8 @@ class Home extends React.Component {
             <p className="title is-1 has-text-centered has-text-black">
               <span role="img" aria-label="logo" className="logo-emoji"></span>Digital Time
             </p>
-            <h1>Humidity: {weather.current.condition.icon}</h1>
+            <h1>{weather.location.country}</h1>
+            <Clock format={'HH:mm:ss'} ticking={true} />
           </div>
         </div>
       </section>

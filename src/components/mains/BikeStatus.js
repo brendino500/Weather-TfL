@@ -1,4 +1,5 @@
 import React from 'react'
+import { bikeStatus } from '../../lib/api'
 
 class BikeStatus extends React.Component {
   render() {
