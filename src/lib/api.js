@@ -12,3 +12,7 @@ export const getBikeStatus = () => {
 export const getWeatherStatus = () => {
   return axios.get(`http://api.weatherapi.com/v1/current.json?key=${process.env.REACT_APP_WEATHER_API_KEY}&q=London`)
 }
+
+export const getAirQuality = () => {
+  return axios.get(`${tflUrl}/AirQuality`)
+}
