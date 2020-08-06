@@ -1,6 +1,6 @@
 import React from 'react'
 
-class WeatherStatus extends React.Component {
+class Map extends React.Component {
   render() {
     return (
       <h1>Weather Page</h1>
@@ -8,4 +8,4 @@ class WeatherStatus extends React.Component {
   }
 }
 
-export default WeatherStatus
+export default Map

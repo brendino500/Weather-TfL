@@ -28,11 +28,11 @@ class Home extends React.Component {
       <section className="hero is-fullheight-with-navbar is-warning">
         <div className="hero-body">
           <div className="container">
-            <p className="title is-1 has-text-centered has-text-black">
+            {/* <p className="title is-1 has-text-centered has-text-black">
               <span role="img" aria-label="logo" className="logo-emoji"></span>Digital Time
-            </p>
-            <h1>{weather.location.country}</h1>
-            <Clock format={'HH:mm:ss'} ticking={true} />
+            </p> */}
+            <h1 className="title is-1 has-text-centered has-text-black">{weather.location.country}</h1>
+            <Clock className="title is-1 has-text-centered has-text-black" format={'HH:mm:ss'} ticking={true} />
           </div>
         </div>
       </section>
