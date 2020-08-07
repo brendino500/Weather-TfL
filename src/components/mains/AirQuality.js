@@ -36,8 +36,12 @@ class AirQuality extends React.Component {
     console.log(airQualityIndex)
     return (
       <div className="columns is-multiline airQuality">
-        <h1>{this.htmlDecode(airQualityIndex.currentForecast[0].forecastText)}</h1>
-        <h1>{airQualityIndex.currentForecast[1].forecastSummary}</h1>
+        {/* https://www.deq.ok.gov/wp-content/uploads/air-division/aqi_mini-1200x675.png */}
+        <h1 className="airQuality">{this.htmlDecode(airQualityIndex.currentForecast[0].forecastText)}</h1>
+        <br />
+        <h2 className="airQuality">{airQualityIndex.currentForecast[1].forecastSummary}</h2>
+        <br />
+        <img src="https://bazallergy.com/wp-content/uploads/2015/11/air-quality-index.jpg"/>
       </div>
     )
   }

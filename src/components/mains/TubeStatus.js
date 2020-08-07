@@ -24,11 +24,11 @@ class TubeStatus extends React.Component {
     
     return (
       <>
-        <div className="columns is-multiline">
+        <div className="columns is-multiline tubes" >
           {this.state.stations.map(stations => (
             <div key={stations.name}>
-              <h1>{stations.name}</h1>
-              <h1>{stations.lineStatuses[0].statusSeverityDescription}</h1>
+              <h1 className="tubes">{stations.name}</h1>
+              <h1 className="tubes">{stations.lineStatuses[0].statusSeverityDescription}</h1>
             </div>
           ))}
         </div>
