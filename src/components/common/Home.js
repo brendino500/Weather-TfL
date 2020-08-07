@@ -26,7 +26,7 @@ class Home extends React.Component {
     if (!weather) return null 
 
     return (
-      <section className="bg-img is-success is-fullheight">
+      <section className="bg-img is-success is-fullheight home">
         <div className="hero-body">
           <div className="bg-img is-success is-fullheight">
             <div className="container has-text-centered">

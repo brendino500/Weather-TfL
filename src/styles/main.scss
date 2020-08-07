@@ -24,18 +24,17 @@ body {
 
 h1.title, h4.title, h2.title {
   color: #cfd3da;
+  font-family: 'Nunito', sans-serif;
+  font-size: 50px;
+  text-shadow: #e0e0e0 1px 1px 0, 4px 5px 4px #000000;
 }
-
-// div.hero-body {
-//   display: flex;
-//   justify-content: center;
-//   // flex-direction: column;
-//   align-content: center;
-// }
 
 
 #root > section > div > div > div > time {
   color: #cfd3da;
+  font-family: 'Nunito', sans-serif;
+  font-size: 50px;
+  text-shadow: #e0e0e0 1px 1px 0, 4px 5px 4px #000000;
 }
 
 .form-link {
@@ -62,13 +61,18 @@ h1.title, h4.title, h2.title {
     }
 }
 
-section.bg-img {
+div.hero-body {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 0;
+}
 
+section.bg-img.home {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
 }
 
 div > h1 {
@@ -93,7 +97,6 @@ a.navbar-item {
 
 #root > section > div > div > div > time {
   color:  #cfd3da;
-  padding: 35%;
   font-family: 'Nunito', sans-serif;
 }
 
