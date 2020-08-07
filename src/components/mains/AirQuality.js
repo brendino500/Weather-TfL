@@ -18,6 +18,7 @@ class AirQuality extends React.Component {
   replaceAll(str, find, replace) {
     return str.replace(new RegExp(find, 'g'), replace)
   }
+  
 
   async componentDidMount() {
     try {
@@ -36,7 +37,9 @@ class AirQuality extends React.Component {
     console.log(airQualityIndex)
     return (
       <div className="columns is-multiline airQuality">
-        {/* https://www.deq.ok.gov/wp-content/uploads/air-division/aqi_mini-1200x675.png */}
+        <h1 className="airTitle">London Air Quality</h1>
+        <p className="airQuality">{airQualityIndex.currentForecast[0].forecastBand}</p>
+        <br />
         <h1 className="airQuality">{this.htmlDecode(airQualityIndex.currentForecast[0].forecastText)}</h1>
         <br />
         <h2 className="airQuality">{airQualityIndex.currentForecast[1].forecastSummary}</h2>

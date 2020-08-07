@@ -37,9 +37,9 @@ h1.title, h4.title, h2.title {
   text-shadow: #e0e0e0 1px 1px 0, 4px 5px 4px #000000;
 }
 
-.form-link {
-  margin-left: 3px;
-}
+// .form-link {
+//   margin-left: 3px;
+// }
 
 .columns {
   color: #125885;
@@ -50,7 +50,7 @@ h1.title, h4.title, h2.title {
   justify-content: center;
   align-content: center;
     div {
-      text-shadow: #e0e0e0 1px 1px 0, 4px 5px 4px #000000;
+      // text-shadow: #e0e0e0 1px 1px 0, 4px 5px 4px #000000;
       flex-grow: 1;
       color: #125885;
       border: 2px solid #125885;
@@ -97,6 +97,12 @@ div > h1 {
   display: flex;
 }
 
+.airTitle {
+  font-family: 'Nunito', sans-serif;
+  text-shadow: #e0e0e0 1px 1px 0, 4px 5px 4px #000000;
+  font-size: 40px;
+}
+
 h1.airQuality {
   font-family: 'Nunito', sans-serif;
   color: #04294b;
@@ -109,15 +115,33 @@ h1.airQuality {
 h2.airQuality {
   font-family: 'Nunito', sans-serif;
   color: #04294b;
-  font-size: 22px;
+  font-size: 27px;
   text-align: center;
+  text-shadow: #e0e0e0 1px 1px 0, 4px 5px 4px #000000;
+  
 }
 
-img {
-  opacity: 0.7;
-
+p {
+  font-family: 'Nunito', sans-serif;
+  color: #04294b;
+  font-size: 27px;
+  text-align: center;
+  text-shadow: #e0e0e0 1px 1px 0, 4px 5px 4px #000000;
 }
 
+#root > div > img {
+  opacity: 0.5;
+  filter: alpha(opacity=40);
+}
+
+#root > div > img:hover {
+  opacity: 1.0;
+  filter: alpha(opacity=100);
+}
+
+#navbarMenuHeroC {
+  opacity: 0.4;
+}
 
 .navbar {
   &.is-transparent {
