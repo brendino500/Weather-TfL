@@ -27,13 +27,20 @@ class Home extends React.Component {
 
     return (
       <section className="bg-img is-success is-fullheight">
-        <div className="hero-head">
+        <div className="hero-body">
           <div className="bg-img is-success is-fullheight">
             <div className="container has-text-centered">
               <h1 className="title">
                 {weather.location.name}
               </h1>
-              <Clock className="title is-1 has-text-centered has-text-white" format={'HH:mm:ss'} ticking={true} />
+              <h2 className="title">
+                {`${weather.current.temp_c}°C`}
+              </h2>
+              <img src={weather.current.condition.icon} alt="weather-icon" />
+              <h4 className="title">
+                {weather.current.condition.text}
+              </h4>
+              <Clock className="title is-2 has-text-centered" format={'HH:mm:ss'} ticking={true} />
             </div>
           </div>
         </div>

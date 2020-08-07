@@ -34,14 +34,13 @@ class Navbar extends React.Component {
               <Link to="/AirQuality"  className="navbar-item">AirQuality</Link>
               <Link to="/BikeStatus" className="navbar-item">BikeStatus</Link>
               <Link to="/TubeStatus" className="navbar-item">TubeStatus</Link>
-              <Link to="/WeatherStatus" className="navbar-item">WeatherStatus</Link>
-              <span className="navbar-item">
+              {/* <span className="navbar-item">
                 <a className="button is-success is-inverted">
                   <span className="icon">
                     <i className="fab fa-github"></i>
                   </span>
                 </a>
-              </span>
+              </span> */}
             </div>
           </div>
         </div>

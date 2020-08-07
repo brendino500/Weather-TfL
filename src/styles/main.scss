@@ -12,18 +12,27 @@
 // #6abded   // light blue
 // #219fda   // mid blue
 // #04294b   // navy (almost black)
-.body {
+* {
+  box-sizing: border-box;
+}
+
+body {
   color:  #cfd3da;
+  font-family: 'Nunito', sans-serif;
 }
 
 
-.title {
+h1.title, h4.title, h2.title {
   color: #cfd3da;
 }
 
-.has-text-white {
-  color: #cfd3da;
-}
+// div.hero-body {
+//   display: flex;
+//   justify-content: center;
+//   // flex-direction: column;
+//   align-content: center;
+// }
+
 
 #root > section > div > div > div > time {
   color: #cfd3da;
@@ -43,16 +52,24 @@
   align-content: center;
   padding-top: 10%;
     div {
+      color: #04294b;
+      border: 2px solid #125885;
+      border-radius: 5px;
+      font-family: 'Nunito', sans-serif;
+      font-weight: bolder;
       margin: 10px;
       padding: 10px;
     }
 }
 
+section.bg-img {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
 
-
-// section.section {
-//   min-height: calc(100vh - 11.25rem);
-// }
+}
 
 div > h1 {
   text-align: center;
@@ -71,11 +88,13 @@ div > h1 {
 a.navbar-item {
   color: #125885;
   font-weight: bold;
+  font-family: 'Nunito', sans-serif;
 }
 
 #root > section > div > div > div > time {
   color:  #cfd3da;
   padding: 35%;
+  font-family: 'Nunito', sans-serif;
 }
 
 // $navbar-background-color: transparent;

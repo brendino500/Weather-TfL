@@ -20,7 +20,6 @@ class BikeStatus extends React.Component {
       this.setState({ longitude: long, latitude: lat })
     })
 
-    
     if ('geolocation' in navigator) {
       console.log('Available')
     } else {
@@ -29,7 +28,7 @@ class BikeStatus extends React.Component {
   
     try {
       const res = await getBikeStatus()
-      console.lhog(res)
+      console.log(res)
       this.setState({ bikePoints: res.data })
     } catch (err) {
       console.log(err)
@@ -47,9 +46,9 @@ class BikeStatus extends React.Component {
         height={'100vh'}
         width={'100vw'}
         mapStyle='mapbox://styles/mapbox/dark-v10'
-        latitude={latitude}
-        longitude={longitude}
-        zoom={13}
+        latitude={51.515}
+        longitude={-0.078}
+        zoom={12}
       >
         {this.state.bikePoints.map(point => (
           <Marker
@@ -57,7 +56,7 @@ class BikeStatus extends React.Component {
             latitude={point.lat}
             longitude={point.lon}
           >
-            <span role="img" aria-label="marker" className="marker">🔘</span>
+            <span role="img" aria-label="marker" className="marker">🚴‍♀️</span>
           </Marker>
         ))}
       </MapGl>
