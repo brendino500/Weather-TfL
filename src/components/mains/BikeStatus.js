@@ -29,7 +29,7 @@ class BikeStatus extends React.Component {
   
     try {
       const res = await getBikeStatus()
-      console.log(res)
+      console.lhog(res)
       this.setState({ bikePoints: res.data })
     } catch (err) {
       console.log(err)
@@ -57,7 +57,7 @@ class BikeStatus extends React.Component {
             latitude={point.lat}
             longitude={point.lon}
           >
-            <span role="img" aria-label="marker" className="marker">🚴‍♀️</span>
+            <span role="img" aria-label="marker" className="marker">🔘</span>
           </Marker>
         ))}
       </MapGl>

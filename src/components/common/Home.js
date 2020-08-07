@@ -31,7 +31,7 @@ class Home extends React.Component {
           <div className="bg-img is-success is-fullheight">
             <div className="container has-text-centered">
               <h1 className="title">
-                {weather.location.country}
+                {weather.location.name}
               </h1>
               <Clock className="title is-1 has-text-centered has-text-white" format={'HH:mm:ss'} ticking={true} />
             </div>

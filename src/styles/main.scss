@@ -7,19 +7,52 @@
 // $box-padding: 1rem;
 
 // HEX COLOURS
-// #cfd3da
-// #125885
-// #6abded
-// #219fda
-// #04294b
+// #cfd3da   // light grey
+// #125885   // dark blue
+// #6abded   // light blue
+// #219fda   // mid blue
+// #04294b   // navy (almost black)
+.body {
+  color:  #cfd3da;
+}
+
+
+.title {
+  color: #cfd3da;
+}
+
+.has-text-white {
+  color: #cfd3da;
+}
+
+#root > section > div > div > div > time {
+  color: #cfd3da;
+}
 
 .form-link {
   margin-left: 3px;
 }
 
-section.section {
-  min-height: calc(100vh - 11.25rem);
+.columns {
+  color: #cfd3da;
+  font-size: 20px;
+  font-weight: bolder;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  padding-top: 10%;
+    div {
+      margin: 10px;
+      padding: 10px;
+    }
 }
+
+
+
+// section.section {
+//   min-height: calc(100vh - 11.25rem);
+// }
 
 div > h1 {
   text-align: center;
@@ -31,12 +64,18 @@ div > h1 {
   &.is-transparent {
   background-color: transparent;
   background-image: none;
+  color:  #cfd3da;
   }
 }
 
 a.navbar-item {
-  color: white;
+  color: #125885;
   font-weight: bold;
+}
+
+#root > section > div > div > div > time {
+  color:  #cfd3da;
+  padding: 35%;
 }
 
 // $navbar-background-color: transparent;
