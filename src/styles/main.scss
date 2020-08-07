@@ -21,6 +21,10 @@ body {
   font-family: 'Nunito', sans-serif;
 }
 
+h1.tubes {
+  color: forestgreen;
+  text-shadow: #e0e0e0 1px 1px 0, 4px 5px 4px #000000;
+}
 
 h1.title, h4.title, h2.title {
   color: #cfd3da;
@@ -28,6 +32,7 @@ h1.title, h4.title, h2.title {
   font-size: 50px;
   text-shadow: #e0e0e0 1px 1px 0, 4px 5px 4px #000000;
 }
+
 
 
 #root > section > div > div > div > time {
@@ -88,9 +93,6 @@ div > h1 {
   justify-content: center;
   align-content: center;
   align-items: center;
-  margin: 50px;
-  padding: 50px;
-  
 }
 
 #root > div {
@@ -110,6 +112,8 @@ h1.airQuality {
   border-radius: 5px;
   font-size: 22px;
   text-align: center;
+  margin: 50px;
+  padding: 50px;
 }
 
 h2.airQuality {

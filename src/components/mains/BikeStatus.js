@@ -35,6 +35,7 @@ class BikeStatus extends React.Component {
     }
   }
 
+
   render() {
     const { longitude, latitude } = this.state
 
@@ -56,7 +57,7 @@ class BikeStatus extends React.Component {
             latitude={point.lat}
             longitude={point.lon}
           >
-            <span role="img" aria-label="marker" className="marker">🚴‍♀️</span>
+            <span role="img" aria-label="marker" className="marker">‍📍</span>
           </Marker>
         ))}
       </MapGl>
