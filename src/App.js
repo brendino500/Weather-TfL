@@ -29,20 +29,4 @@ class App extends React.Component {
   }
 }
 
-
-// const App = () => {
-//   return (
-//     <BrowserRouter>
-//       <Navbar />
-//       <Switch>
-//         <Route exact path="/" component={Home}/>
-//         <Route path="/AirQuality" component={AirQuality} />
-//         <Route path="/BikeStatus" component={BikeStatus} />
-//         <Route path="/TubeStatus" component={TubeStatus} />
-//         <Route path="/WeatherStatus" component={WeatherStatus} />
-//       </Switch>
-//     </BrowserRouter>
-//   )
-// }
-
 export default App

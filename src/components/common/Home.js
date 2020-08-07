@@ -33,7 +33,7 @@ class Home extends React.Component {
               <h1 className="title">
                 {weather.location.country}
               </h1>
-              <Clock className="title is-1 has-text-centered has-text-black" format={'HH:mm:ss'} ticking={true} />
+              <Clock className="title is-1 has-text-centered has-text-white" format={'HH:mm:ss'} ticking={true} />
             </div>
           </div>
         </div>

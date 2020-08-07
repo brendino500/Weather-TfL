@@ -1,10 +1,10 @@
 
 
-$yellow:#2c698d;
-$footer-background-color: #363636;
-$footer-padding: 2rem 1.5rem;
-$card-header-background-color: $yellow;
-$box-padding: 1rem;
+// $yellow:#2c698d;
+// $footer-background-color: #363636;
+// $footer-padding: 2rem 1.5rem;
+// $card-header-background-color: $yellow;       think we an remove that
+// $box-padding: 1rem;
 
 // HEX COLOURS
 // #cfd3da
@@ -36,6 +36,7 @@ div > h1 {
 
 a.navbar-item {
   color: white;
+  font-weight: bold;
 }
 
 // $navbar-background-color: transparent;
