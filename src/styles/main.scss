@@ -81,6 +81,21 @@ div > h1 {
   align-content: center;
 }
 
+#root > div {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
+// h1.airQuality {
+//   display: flex;
+//   justify-content: center;
+//   align-content: center;
+//   align-items: center;
+// }
+
 .navbar {
   &.is-transparent {
   background-color: transparent;

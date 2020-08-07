@@ -35,7 +35,7 @@ class AirQuality extends React.Component {
     if (!airQualityIndex) return null
     console.log(airQualityIndex)
     return (
-      <div className="columns is-multiline">
+      <div className="columns is-multiline airQuality">
         <h1>{this.htmlDecode(airQualityIndex.currentForecast[0].forecastText)}</h1>
         <h1>{airQualityIndex.currentForecast[1].forecastSummary}</h1>
       </div>
