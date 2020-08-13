@@ -13,8 +13,6 @@ class BikeStatus extends React.Component {
 
   async componentDidMount() {
     navigator.geolocation.getCurrentPosition(position => {
-      console.log('Latitude is :', position.coords.latitude)
-      console.log('Longitude is :', position.coords.longitude)
       const lat = position.coords.latitude
       const long = position.coords.longitude
       this.setState({ longitude: long, latitude: lat })
@@ -28,7 +26,6 @@ class BikeStatus extends React.Component {
   
     try {
       const res = await getBikeStatus()
-      console.log(res)
       this.setState({ bikePoints: res.data })
     } catch (err) {
       console.log(err)

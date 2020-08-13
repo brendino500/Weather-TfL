@@ -8,9 +8,9 @@ export const getTubeStatus = () => {
 export const getBikeStatus = () => {
   return axios.get(`${tflUrl}/BikePoint`)
 }
-
+// const url = 'https://cors-anywhere.herokuapp.com/www.example.come/stuff
 export const getWeatherStatus = () => {
-  return axios.get(`http://api.weatherapi.com/v1/current.json?key=${process.env.REACT_APP_WEATHER_API_KEY}&q=London`)
+  return axios.get(`https://cors-anywhere.herokuapp.com/api.weatherapi.com/v1/current.json?key=${process.env.REACT_APP_WEATHER_API_KEY}&q=London`)
 }
 
 export const getAirQuality = () => {

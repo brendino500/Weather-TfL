@@ -12,7 +12,6 @@ class Home extends React.Component {
   async componentDidMount() {
     try {
       const res = await getWeatherStatus()
-      // console.log(res.data)
       this.setState({ weather: res.data })
     } catch (err) {
       console.log(err)
@@ -20,7 +19,6 @@ class Home extends React.Component {
   }
 
   render() {
-    console.log(this.state)
     const { weather } = this.state
 
     if (!weather) return null 

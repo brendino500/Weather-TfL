@@ -9,7 +9,6 @@ class TubeStatus extends React.Component {
   async componentDidMount() {
     try {
       const res = await getTubeStatus()
-      console.log(res.data)
       this.setState({ stations: res.data })
     } catch (err) {
       console.log(err)
@@ -17,7 +16,6 @@ class TubeStatus extends React.Component {
   }
 
   render() {
-    console.log(this.state)
     const { stations } = this.state
 
     if (!stations) return null
