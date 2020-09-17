@@ -22,7 +22,7 @@ class TubeStatus extends React.Component {
     
     return (
       <>
-        <div className="columns tube-columns is-mobile”" >
+        <div className="columns tube-columns is-mobile" >
           {this.state.stations.map(stations => (
             <div key={stations.name}>
               <h1 className="tubes">{stations.name}</h1>

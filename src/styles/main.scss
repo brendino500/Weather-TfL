@@ -180,5 +180,16 @@ a.navbar-item {
 
 }
 
+.columns {
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  div{
+    flex-grow: 1;
+    text-align: center;
+  }
+}
+
 
 @import '~bulma/bulma.sass';
