@@ -30,6 +30,7 @@ To open the page -> `yarn start`
 
 <br />
 --
+<br />
 As we were both conscious of the absolute necessity to reduce the pollution levels in all major cities in the world, we decided to offer uses an efficient app returning:
 
 -   Current Weather
