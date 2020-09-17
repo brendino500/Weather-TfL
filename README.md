@@ -20,10 +20,14 @@
 * 4 API Implementation
 --- 
 ## Overview
+
 Should you choose to clone our repo:  
 To install all the packages listed in the package.json: `yarn add ` 
+
 <br />
+
 To open the page -> `yarn start`
+
 <br />
 --
 As we were both conscious of the absolute necessity to reduce the pollution levels in all major cities in the world, we decided to offer uses an efficient app returning:
