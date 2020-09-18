@@ -29,7 +29,7 @@ class Home extends React.Component {
           <div className="bg-img is-success is-fullheight">
             <div className="container has-text-centered">
               <h1 className="title">
-                {weather.location.name}.env
+                {weather.location.name}
               </h1>
               <h2 className="title">
                 {`${weather.current.temp_c}°C`}

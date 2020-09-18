@@ -21,9 +21,28 @@ body {
   font-family: 'Nunito', sans-serif;
 }
 
+.container2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+    div {
+    flex-grow: 1;
+    text-align: center;
+    background-color: rgba(232, 232, 232, .4);
+    border: 1px solid grey;
+    border-radius: 5px;
+    padding: 30px;
+    margin: 10px;
+  }
+}
+
+
 h1.tubes {
   color: forestgreen;
   text-shadow: #e0e0e0 1px 1px 0, 4px 5px 4px #000000;
+  font-size: 26px;
 }
 
 h1.title, h4.title, h2.title {

@@ -44,7 +44,7 @@ class AirQuality extends React.Component {
         <br />
         <h2 className="airQuality">{airQualityIndex.currentForecast[1].forecastSummary}</h2>
         <br />
-        <img src="https://bazallergy.com/wp-content/uploads/2015/11/air-quality-index.jpg"/>
+        <img src="https://bazallergy.com/wp-content/uploads/2015/11/air-quality-index.jpg" alt="air-quality-table-info"/>
       </div>
     )
   }
