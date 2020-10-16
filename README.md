@@ -65,6 +65,14 @@ We knew we only had **48 hours to complete this project**, so we wanted to make 
 
 ---
 
+## :partying_face: Wins
+
+* Calling 4 APIs within 48h in a React with no previous experience was a real challenge, therefore incredibly rewarding.
+
+* **Pair coding the whole project using VSCode Live Share.**
+
+---
+
 ## :paperclips: Takeaways
 
 - This project was **incredibly fun coding the entire thing as a pair**. We felt by doing this, we were learning the code and more importantly **learning from each other**. **When one person was stuck we always had the other person to help and guide to understand the concept.**
